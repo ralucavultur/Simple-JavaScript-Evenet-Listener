@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Favorite food</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+	</style>
+</head>
+
+<body>
+	<h1>Favorite food</h1>
+	This is a list of foods. Please select your favorite
+	<br>
+	<form>
+		<select name="foods" id="foods">
+			<option value="Pizza">Pizza</option>
+			<option value="Salad" selected>Salad</option>
+			<option value="Hamburger">Hamburger</option>
+			<option value="Chicken">Chicken</option>
+			<option value="Lasagna">Lasagna</option>
+			<option value="Pasta">Pasta</option>
+			<option value="Fish">Fish</option>
+		</select>
+	</form>
+
+	<p id="someDiv">
+		
+	</p>
+	
+
+	<script type="text/javascript">
+		
+		document.getElementById("foods").addEventListener("change", function(){
+   			document.getElementById("someDiv").innerHTML='Your favorite food is ' + this.value;
+   			});
+		
+		
+	</script>
+
+</body>
+
+</html>
